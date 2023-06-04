@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Form Action and Canvas Example</title>
+</head>
+
+<body>
+    <h1>Form Action and Canvas Example</h1>
+
+    <h2>Form with Get Method:</h2>
+    <form action="https://www.example.com" method="get" target="_blank">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+
+    <h2>Form with Post Method:</h2>
+    <form action="https://www.example.com" method="post" target="_self">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+
+    <h2>Canvas Application:</h2>
+    <canvas id="myCanvas" width="400" height="200"></canvas>
+
+    <script>
+        // Canvas Application
+        const canvas = document.getElementById('myCanvas');
+        const ctx = canvas.getContext('2d');
+
+        ctx.fillStyle = 'red';
+        ctx.fillRect(50, 50, 100, 100);
+
+        ctx.fillStyle = 'blue';
+        ctx.beginPath();
+        ctx.arc(250, 100, 50, 0, Math.PI * 2);
+        ctx.fill();
+    </script>
+</body>
+
+</html>

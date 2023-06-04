@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="John Doe">
+    <meta name="description" content="This is a website showcasing various input types in HTML5.">
+    <meta name="generator" content="MyHTMLGen">
+    <meta name="keywords" content="HTML5, input types, examples">
+    <meta name="application-name" content="OpenStreetMap">
+    <title>HTML5 Input Types Example</title>
+</head>
+
+<body>
+    <h1>HTML5 Input Types Example</h1>
+    <form>
+        <label for="hiddenInput">Hidden:</label>
+        <input type="hidden" id="hiddenInput" value="Hidden value">
+
+        <label for="telInput">Tel:</label>
+        <input type="tel" id="telInput" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="XXX-XXX-XXXX">
+
+        <label for="emailInput">Email:</label>
+        <input type="email" id="emailInput" placeholder="example@example.com">
+
+        <label for="numberInput">Number:</label>
+        <input type="number" id="numberInput" min="0" max="100" step="5">
+
+        <label for="rangeInput">Range:</label>
+        <input type="range" id="rangeInput" min="0" max="100" step="5">
+
+        <label for="searchInput">Search:</label>
+        <input type="search" id="searchInput" placeholder="Search...">
+
+        <label for="imageInput">Image:</label>
+        <input type="image" id="imageInput" src="image.png" alt="Submit">
+
+        <label for="weekInput">Week:</label>
+        <input type="week" id="weekInput">
+
+        <label for="urlInput">URL:</label>
+        <input type="url" id="urlInput" placeholder="https://www.example.com">
+
+        <label for="dateTimeInput">Date and Time:</label>
+        <input type="datetime-local" id="dateTimeInput">
+
+        <label for="monthInput">Month:</label>
+        <input type="month" id="monthInput">
+
+        <label for="timeInput">Time:</label>
+        <input type="time" id="timeInput">
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Images, Image Maps, and Color Example</title>
+</head>
+
+<body>
+    <h1>Images, Image Maps, and Color Example</h1>
+
+    <h2>Image:</h2>
+    <img src="example.jpg" alt="Example Image" width="300" height="200">
+
+    <h2>Image Map:</h2>
+    <img src="worldmap.jpg" alt="World Map" usemap="#worldmap">
+
+    <map name="worldmap">
+        <area shape="rect" coords="0,0,100,100" href="https://www.northamerica.com" alt="North America">
+        <area shape="rect" coords="100,0,200,100" href="https://www.southamerica.com" alt="South America">
+        <area shape="rect" coords="200,0,300,100" href="https://www.europe.com" alt="Europe">
+        <area shape="rect" coords="0,100,100,200" href="https://www.africa.com" alt="Africa">
+        <area shape="rect" coords="100,100,200,200" href="https://www.asia.com" alt="Asia">
+        <area shape="rect" coords="200,100,300,200" href="https://www.oceania.com" alt="Oceania">
+    </map>
+
+    <h2>Color:</h2>
+    <div style="background-color: #FF0000; width: 100px; height: 100px;"></div>
+    <div style="background-color: rgb(0, 255, 0); width: 100px; height: 100px;"></div>
+    <div style="background-color: rgba(0, 0, 255, 0.5); width: 100px; height: 100px;"></div>
+    <div style="background-color: hsl(240, 100%, 50%); width: 100px; height: 100px;"></div>
+    <div style="background-color: hsla(120, 100%, 50%, 0.5); width: 100px; height: 100px;"></div>
+</body>
+
+</html>

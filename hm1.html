@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Links Example</title>
+    <script>
+        function sendEmail() {
+            window.location.href = 'mailto:example@example.com';
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Links Example</h1>
+    <p>
+        <a href="https://www.google.com">Link to another site</a>
+    </p>
+    <p>
+        <a href="#section">Link to anchor on the same page</a>
+    </p>
+    <p>
+        <a href="javascript:alert('Hello, World!');">Link that runs JavaScript</a>
+    </p>
+    <p>
+        <a href="tel:+1234567890">Link that dials a number</a>
+    </p>
+    <p>
+        <a href="javascript:sendEmail();">Link that opens email client</a>
+    </p>
+    <p>
+        <a href="https://www.example.com" target="_blank">Link that opens in a new tab/window</a>
+    </p>
+    <h2 id="section">This is an anchor section</h2>
+</body>
+
+</html>
